@@ -22,7 +22,7 @@ class App extends Component {
     setClicked = id => {
 
         // Make a copy of the state matches array to work with
-        const matches = this.state.matches;
+        // const matches = this.state.matches;
 
         // Filter for the clicked match
         const clickedMatch = matches.filter(match => match.id === id);
@@ -31,8 +31,6 @@ class App extends Component {
         // do the game over actions
         if (clickedMatch[0].clicked){
 
-            console.log ("Correct Guesses: " + correctGuesses);
-            console.log ("Best Score: " + bestScore);
 
             correctGuesses = 0;
             clickMessage = "wow, you already clicked that, start over"
@@ -43,7 +41,6 @@ class App extends Component {
 
             this.setState({clickMessage});
             this.setState({ correctGuesses });
-            this.setState({matches});
 
         // Otherwise, if clicked = false, and the user hasn't finished
         } else if (correctGuesses < 11) {
@@ -71,7 +68,7 @@ class App extends Component {
         } else {
 
             // Set its value to true
-            clickedMatch[0].clicked = true;
+            // clickedMatch[0].clicked = true;
 
             // restart the guess counter
             correctGuesses = 0;
@@ -81,6 +78,7 @@ class App extends Component {
             bestScore = 12;
             this.setState({ bestScore });
             
+            //reset clicked flags
             for (let i = 0 ; i < matches.length ; i++){
                 matches[i].clicked = false;
             }
@@ -89,7 +87,6 @@ class App extends Component {
             matches.sort(function(a, b){return 0.5 - Math.random()});
 
             // Set this.state.matches equal to the new matches array
-            this.setState({ matches });
             this.setState({correctGuesses});
             this.setState({clickMessage});
 
