@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "./images/bill.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "./images/bobby.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "./images/buckley.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "./images/boom.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "./images/hank.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "./images/luanne.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "./images/moss.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "./images/nancy.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "./images/peggy.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "./images/dale.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "./images/kahn.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "./images/redcorn.png",
+    "clicked": false
+  }
+]
